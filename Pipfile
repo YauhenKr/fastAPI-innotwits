@@ -7,6 +7,13 @@ name = "pypi"
 fastapi = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 boto3 = "*"
+python-dotenv = "*"
+pika = "*"
+aio-pika = "*"
+pyjwt = "*"
+pytest = "*"
+dynalite = "*"
+httpx = "*"
 
 [dev-packages]
 

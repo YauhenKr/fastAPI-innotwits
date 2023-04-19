@@ -1,0 +1,23 @@
+version: '3.10.5'
+
+services:
+  fast_api:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_microservice
+    restart: always
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/usr/src/fastapi-docker
+    networks:
+      - main
+
+
+networks:
+  main:
+    external: True
+    name: innowise_intership_main
